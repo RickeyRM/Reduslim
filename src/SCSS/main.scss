@@ -1,0 +1,16 @@
+@import "./mixin.scss";
+@import "./nullstyle.scss";
+@import "./reduslim.scss";
+@import "./form.scss";
+@import "./footer.scss";
+.wrapper{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+

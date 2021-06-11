@@ -1,0 +1,90 @@
+.reduslim{
+    &__inner{
+        display: flex;
+        box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 1px;
+        width: 1120px;
+        @include mobile{
+            width: 320px;
+            display: block;
+        }
+    }
+    &__item{
+        width: 560px;
+        position: relative;
+        @include mobile{
+            width: 320px;
+            min-height: 290px;
+        }
+    }
+    &__item:first-child{
+        background:url(../img/Ellipse.png) 20px 50px no-repeat,
+                   url(../img/ellipse-border.png) 260px -80px no-repeat,
+                   linear-gradient(180deg, #428A60 0%, #35734F 100%);
+        box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 1px;
+        @include mobile{
+            background:url(../img/ellipse-m.png) center top 80px no-repeat;
+            box-shadow: none;
+        }
+    }
+    &__name{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        @include mobile{
+            color: #212121;
+            left: 20px;
+        }
+    }
+    &__eco{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 40px;
+        right: 480px;
+        @include mobile{
+            color: #212121;
+            top: 40px;
+            right: 20px;
+        }
+    }
+    &__img{
+        position: absolute;
+        bottom: 35px;
+        left: 60px;
+        @include mobile{
+            max-width: 223px;
+            height: 100px;
+            top: 140px;
+        }
+        img{
+            @include mobile{
+                width: 223px;
+            }
+        }
+    }
+    &__top{
+        background: #F8F8F8;
+        border-top-right-radius: 30px;
+        @include mobile{
+            background: none;
+        }
+    }
+    &__title{
+        text-align: center;
+        color: #212121;
+        font-size: 30px;
+        width: 303px;
+        margin: 0 auto;
+        padding: 29px 0;
+        @include mobile{
+            width: 100%;
+        }
+    }
+}
